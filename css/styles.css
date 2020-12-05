@@ -62,13 +62,18 @@ body{
 .vidj container {
     z-index: 2;
     position: relative;
+    
 }
 
 .map {
     position: relative;
     overflow: hidden;
-    margin: 0;
+    margin-bottom: 5px;
+    margin-top: 30px;
+
+
 }
+
 
 .map map1 {
     position: absolute;
@@ -77,6 +82,9 @@ body{
     width: 100vw;
     height: 100%;
     object-fit: cover;
+    margin-bottom: 5px;
+
+    
 }
 
 /* video css */
@@ -937,11 +945,12 @@ img:hover {
 .product-grid6 .social li a:after,.product-grid6 .social li a:before{content:attr(data-tip);color:#fff;background-color:#2e86de;font-size:12px;letter-spacing:1px;line-height:20px;padding:1px 5px;border-radius:5px;white-space:nowrap;opacity:0;transform:translateX(-50%);position:absolute;left:50%;top:-30px}
 .product-grid6 .social li a:after{content:'';height:15px;width:15px;border-radius:0;transform:translateX(-50%) rotate(45deg);top:-20px;z-index:-1}
 .product-grid6 .social li a:hover:after,.product-grid6 .social li a:hover:before{opacity:1}
-@media only screen and (max-width:990px){.product-grid6{margin-bottom:30px}
+@media only screen and (max-width:990px){.product-grid6{margin-bottom:30px }
 }
 
+
 /* footer */
-.footer {position: relative ;height: 100px; width: 100%;min-height: 160px;max-height: 200px; background:#38383a;padding: 10px 0;z-index: 20; border-radius: 3%; border-color: black; border: 3px solid black;}
+.footer {position: relative ;height: 100px; width: 100%;min-height: 160px;max-height: 200px; background:#555555;padding: 10px 0;z-index: 20; border-radius: 3%; border-color: black; border: 3px solid black; }
 .footer .social-area {margin-top: 50px;width: 40%;}
 .footer .social-area ul {z-index: 1;display: block;width:50%;padding: 0;text-align: right;position: absolute;right: 7%;box-sizing: border-box;}
 .footer .social-area ul li {display: inline-block;text-align: center;line-height: 0;}
@@ -971,7 +980,7 @@ img:hover {
    20px;line-height: 1px;padding: 0;
   }
   .credits img{
-    border-radius: 50%; 
+    border-radius: 30%; 
     height: 80px;
     
   }
