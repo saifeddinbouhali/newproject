@@ -1,0 +1,5 @@
+[1202/154720.792:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1202/214415.074:ERROR:process_info.cc(359)] UncheckedAllocate
+[1202/214449.192:ERROR:process_info.cc(359)] UncheckedAllocate
+[1202/214501.430:ERROR:process_info.cc(359)] UncheckedAllocate
+[1202/214504.474:ERROR:filesystem_win.cc(148)] DeleteFile C:\Users\Lenovo\AppData\Local\Google\Chrome\User Data\Crashpad\reports\54edbc59-8076-44e2-9514-c39f31ffe09b.dmp: The process cannot access the file because it is being used by another process. (0x20)
