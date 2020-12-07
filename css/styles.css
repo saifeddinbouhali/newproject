@@ -209,77 +209,95 @@ body{
     color:#fff;
     text-decoration:none;
   }
-  /* card avis */
-  /* .card1{
+  /* carousel 3D*/
+  .carousel_wrapper1 {
     position: relative;
-  overflow: hidden;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    width: 80%;
-    max-width: 600px;
-    display: flex;
-    flex-direction: column;
-    color: black;
-    text-align: center;
-    padding: 2em;
-  }
-  .social-list{
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    margin: 0;
-    padding: 0%;
-    width: 150px;
-    border: 3px ;
-    margin: 0 auto;
-  }
-  .social-link
-{
-  opacity: 0.5;
-}
-.social-link:hover,
-.social-link:focus{
-  opacity: 1;
-}
-.profile-image{
-  border-radius: 50%;
-  border: 3px solid rgb(179, 153, 8);
-margin: 0.7em auto;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 1000px;
 }
 
-.profile-position{
-  margin: 0;
-  text-transform: uppercase;
-  font-size: 0.875rem;
-  
+.carousel1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform: rotateY(-360deg) translateZ(-412px);
+    /* add reverse transformation from the slides */
+    animation: swirl 40s steps(10000, end) infinite;
+    /* run `swirl` animation (defined at end of CSS) infitely, with animation lasting 40 seconds, and 10,000 steps between the FROM and TO values in the animation for a smooth rotation */
 }
-.profile-name{
-  font-size: 2rem;
-  line-height: 1.1;
-}
-.profile-name:after{
-  content: "";
-  display: block;
-  height: 1px;
-  width: 2em;
-  opacity: 0.35;
-}
-.profile-body{
-  font-weight: 300;
-  margin-bottom: 0;
-}
-@media(min-width:600px){
-  .card1{
-    flex-direction: row;
-  }
-  .profile-main{
-    text-align: left;
-    margin-left: 2em;
-  }
-.profile-name:after{
-  margin-left: 0;
-}
-} */
 
+.slide1 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 300px;
+    height: 187px;
+}
+
+.slide1 img {
+    width: 280px;
+    height: 175px;
+    border: 3px inset #ffc107;
+    /* border-radius: 100%; */
+    box-shadow: 0 0 15px 3px black;
+}
+
+
+
+
+.slide1.one1 {
+    transform: rotateY(0deg) translateZ(412px);
+}
+
+.slide1.two1 {
+    transform: rotateY(40deg) translateZ(412px);
+}
+
+.slide1.three1 {
+    transform: rotateY(80deg) translateZ(412px);
+}
+
+.slide1.four1 {
+    transform: rotateY(120deg) translateZ(412px);
+}
+
+.slide1.five1 {
+    transform: rotateY(160deg) translateZ(412px);
+}
+
+.slide1.six1 {
+    transform: rotateY(200deg) translateZ(412px);
+}
+
+.slide1.seven1 {
+    transform: rotateY(240deg) translateZ(412px);
+}
+
+.slide1.eight1 {
+    transform: rotateY(280deg) translateZ(412px);
+}
+
+.slide1.nine1 {
+    transform: rotateY(320deg) translateZ(412px);
+}
+
+/*
+CSS3 ANIMATION
+-------------------
+Simply rotates the carousel around the Y axis by using rotateY and starting at initial value, -360º, and going to final value 0º, then resetting.
+*/
+
+@keyframes swirl {
+    from {
+        transform: rotateY(-360deg);
+    }
+
+    to {
+        transform: rotateY(0deg);
+    }
+}
 /* rating */
 
 .testimonial-section2{
