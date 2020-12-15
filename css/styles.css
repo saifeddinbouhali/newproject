@@ -87,6 +87,21 @@ body{
     
 }
 
+
+@media screen and (max-width: 1024px) {
+   .container .line1 img {
+    margin-bottom:7px;
+    margin-top: 7   px;
+       
+    }
+}
+@media screen and (max-width: 1024px) {
+    .container .line2 img {
+     margin-bottom:7px;
+     margin-top: 7   px;
+        
+     }
+ }
 /* video css */
 
 #myVideo {
@@ -112,7 +127,7 @@ body{
   }
   
 
-/* home cards */
+/* aboutus cards */
 .profile-card-3 {
     font-family: 'Open Sans', Arial, sans-serif;
     position: relative;
@@ -216,18 +231,15 @@ body{
     margin: 100px auto 0 auto;
     perspective: 1000px;
 }
-
+/* the carousel for home page */
 .carousel1 {
     position: absolute;
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
-    transform: rotateY(-360deg) translateZ(-412px);
-    /* add reverse transformation from the slides */
-    animation: swirl 40s steps(10000, end) infinite;
-    /* run `swirl` animation (defined at end of CSS) infitely, with animation lasting 40 seconds, and 10,000 steps between the FROM and TO values in the animation for a smooth rotation */
+    transform: rotateY(-360deg) translateZ(-212px);
+    animation: swirl 20s steps(10000, end) infinite;
 }
-
 .slide1 {
     position: absolute;
     top: 10px;
@@ -253,40 +265,31 @@ body{
 
 
 .slide1.one1 {
-    transform: rotateY(0deg) translateZ(412px);
+    transform: rotateY(360deg) translateZ(412px);
 }
 
-.slide1.two1 {
-    transform: rotateY(40deg) translateZ(412px);
-}
+
 
 .slide1.three1 {
-    transform: rotateY(80deg) translateZ(412px);
-}
-
-.slide1.four1 {
     transform: rotateY(120deg) translateZ(412px);
 }
 
+.slide1.four1 {
+    transform: rotateY(180deg) translateZ(412px);
+}
+
 .slide1.five1 {
-    transform: rotateY(160deg) translateZ(412px);
-}
-
-.slide1.six1 {
-    transform: rotateY(200deg) translateZ(412px);
-}
-
-.slide1.seven1 {
     transform: rotateY(240deg) translateZ(412px);
 }
 
-.slide1.eight1 {
-    transform: rotateY(280deg) translateZ(412px);
+.slide1.six1 {
+    transform: rotateY(300deg) translateZ(412px);
 }
 
-.slide1.nine1 {
-    transform: rotateY(320deg) translateZ(412px);
+.slide1.seven1 {
+    transform: rotateY(60deg) translateZ(412px);
 }
+
 
 /*
 CSS3 ANIMATION
@@ -495,7 +498,11 @@ Simply rotates the carousel around the Y axis by using rotateY and starting at i
     -o-animation: testim-content-out .5s ease-in-out forwards;    
     animation: testim-content-out .5s ease-in-out forwards;    
 }
-
+@media screen and (max-width: 1024px) {
+    .testim .dots {
+        display: none !important;
+    }
+}
 @-webkit-keyframes testim-scale {
     0% {
         -webkit-box-shadow: 0px 0px 0px 0px #eee;
@@ -892,7 +899,7 @@ Simply rotates the carousel around the Y axis by using rotateY and starting at i
 }
 /* carousel */
 .carousel-item {
-  height: 400px;
+  height: 375px;
   width: max-content;
   margin:0 ;
   position: relative;
@@ -998,7 +1005,7 @@ img:hover {
 
 
 .footer .credits {
-    margin-top: 20px;
+    /* margin-top: 20px; */
   font-weight: normal;
   position: relative;
   width: 100%;
@@ -1008,10 +1015,15 @@ img:hover {
   font-size: 20px;
    line-height: 1px;
    padding-top: 0;
+   align-items: center;
+    
   }
   .credits img{
+      margin-left: 30px;
     border-radius: 30%; 
-    height: 80px;
+    height: 120px;
+    width:120px;
+    
     
   }
 .footer-white {color:#fff;font-weight: normal;}
